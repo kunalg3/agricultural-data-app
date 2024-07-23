@@ -22,6 +22,11 @@ interface CropAggregatedData {
   averageArea: number;
 }
 
+const extractYear = (yearString: string): string => {
+  const match = yearString.match(/(\d{4})$/);
+  return match ? match[0] : yearString;
+};
+
 export const processAgricultureDataByYear = (): YearlyData[] => {
   const cropData: CropData[] = data as CropData[];
 
@@ -29,7 +34,7 @@ export const processAgricultureDataByYear = (): YearlyData[] => {
 
   // Group data by year
   cropData.forEach((item) => {
-    const year = item.Year;
+    const year = extractYear(item.Year);
     if (!yearMap[year]) {
       yearMap[year] = [];
     }
