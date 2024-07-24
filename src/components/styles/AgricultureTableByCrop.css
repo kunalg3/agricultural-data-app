@@ -1,0 +1,19 @@
+/* src/components/AgricultureTableByYear.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  thead th, tbody td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+  }
+  

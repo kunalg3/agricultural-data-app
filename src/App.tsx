@@ -2,7 +2,7 @@
 import React from 'react';
 import AgricultureTableByYear from './components/AgricultureTableByYear';
 import AgricultureTableByCrop from './components/AgricultureTableByCrop';
-// import './App.css';
+import './App.css';
 
 const App: React.FC = () => {
   return (

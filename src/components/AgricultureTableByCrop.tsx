@@ -1,17 +1,20 @@
 // src/components/AgricultureTableByCrop.tsx
 import React from 'react';
 import { processAgricultureDataByCrop } from '../utils/dataProcessor';
+import './styles/AgricultureTableByCrop.css'; // Import the CSS file
 
 const AgricultureTableByCrop: React.FC = () => {
-  const data = processAgricultureDataByCrop();
+  // this extracts data from function in dataProcessor
+  const data = processAgricultureDataByCrop(); 
 
   return (
+    //Table for data
     <table>
       <thead>
         <tr>
           <th>Crop</th>
-          <th>Average Yield (1950-2020)</th>
-          <th>Average Cultivation Area (1950-2020)</th>
+          <th>Average Yield of the Crop between 1950-2020</th>
+          <th>Average Cultivation Area of the Crop between 1950-2020</th>
         </tr>
       </thead>
       <tbody>
